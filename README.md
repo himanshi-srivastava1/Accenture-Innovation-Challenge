@@ -1,51 +1,13 @@
-# Accenture-Innovation-Challenge
 # ControlPlane.ai
+### Accenture Innovation Challenge
 
-> **Real-time AI oversight for Performance, Cost, and Responsibility**
-
-ControlPlane.ai is a model-agnostic governance layer that sits between users and AI models to continuously monitor, evaluate, and control AI interactions in real time.
-
-It addresses a fundamental problem with modern AI deployments:
-
-> AI can be confidently wrong, quietly expensive, or subtly biased — often discovered only after a user has already acted on the response.
-
-ControlPlane.ai turns AI oversight from an after-the-fact discovery mechanism into a **continuous, real-time control system**.
+ControlPlane.ai is an intelligent guardrail and governance engine designed to analyze multi-part user prompts, perform real-time intent and safety checks, inject dynamic instructions into LLMs, and validate responses through a multi-tier verification layer before final delivery.
 
 ---
 
-## 🚨 Problem
+## Architecture Overview
 
-Every AI deployment introduces risks across multiple dimensions:
-
-### Performance
-- Hallucinated information
-- Incorrect answers
-- Missing or incomplete data
-- Incorrect assumptions in prompts
-
-### Responsibility
-- Bias
-- Unsafe or illegal content
-- Confidential information leakage
-- Privacy violations
-
-### Cost
-- Unnecessary model calls
-- Re-prompting and retry loops
-- Multiple verification models
-- Excessive verification overhead
-
-Traditional AI systems generally check these problems after generation or rely on static guardrails.
-
-This creates a major gap:
-
-**The system may detect a problem only after the AI response has already reached the user.**
-
----
-
-# 💡 Our Solution
-
-ControlPlane.ai introduces a **two-layer AI checking architecture** around every AI response.
+ControlPlane.ai introduces a **two-layer AI evaluation architecture** positioned directly around the Core AI model.
 
 ```text
                     ┌─────────────────┐
