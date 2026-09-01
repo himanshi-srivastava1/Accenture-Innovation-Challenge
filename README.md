@@ -1,4 +1,5 @@
-# Accenture Innovation Challenge Prototype
+# Accenture Innovation Challenge 
+
 # ControlPlane.ai
 
 > **Intelligent guardrail & governance engine** designed to analyze prompts, enforce real-time safety and contextual checks, instruct Core AI models, and validate generated responses through multi-layer verification.
